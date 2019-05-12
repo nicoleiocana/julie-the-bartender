@@ -38,6 +38,9 @@ gem 'bootsnap', '>= 1.1.0', require: false
 # This gem provides jQuery and the jQuery-ujs driver for your Rails 4+ application.
 gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 
+# The most popular HTML, CSS, and JavaScript framework on the web.
+gem 'bootstrap', '~> 4.3', '>= 4.3.1'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
@@ -55,11 +58,11 @@ group :development do
 end
 
 group :test do
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '>= 2.15'
-  gem 'selenium-webdriver'
-  # Easy installation and use of chromedriver to run system tests with Chrome
-  gem 'chromedriver-helper'
+  # Extracting `assigns` and `assert_template` from ActionDispatch.
+  gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
+  # Suite of testing facilities supporting TDD, BDD, mocking, and benchmarking.
+  gem 'minitest', '~> 5.11', '>= 5.11.3'
+  
 end
 
 group :production do
