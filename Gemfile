@@ -62,6 +62,8 @@ group :test do
   gem 'rails-controller-testing', '~> 1.0', '>= 1.0.4'
   # Suite of testing facilities supporting TDD, BDD, mocking, and benchmarking.
   gem 'minitest', '~> 5.11', '>= 5.11.3'
+  # Extend Minitest through simple hooks
+  gem 'minitest-reporters', '~> 1.3', '>= 1.3.6'
   
 end
 

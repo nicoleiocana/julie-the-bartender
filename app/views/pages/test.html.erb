@@ -1,0 +1,24 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to "sample app", root_path, id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home",    root_path %></li>
+        <li><%= link_to "Help",    help_path %></li>
+        <li><%= link_to "Log in", '#' %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<a class="navbar-brand" href="#">
+    <%= image_tag 'julie-the-bartender-logo.png', class: "mr-2", 
+     alt: "julie.the.bartender logo", style: "width: 40px;" %>
+    julie.the.bartender
+  </a>
+  
+  <a class="navbar-brand" href="/">
+    <img src="/assets/julie-the-bartender-logo.png" class="d-inline-block align-top mr-2" 
+     alt="julie.the.bartenderlogo" width="30">
+    julie.the.bartender
+  </a>

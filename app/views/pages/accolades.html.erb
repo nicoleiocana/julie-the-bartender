@@ -1,0 +1,48 @@
+<% provide(:title, "Accolades") %>
+
+    <div class="row justify-content-center">
+      <div class="col-10 col-md-6">
+        <div id="drinksCarousel" class="carousel slide carousel-fade mt-2" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#drinksCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#drinksCarousel" data-slide-to="1"></li>
+            <li data-target="#drinksCarousel" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag "placeholder1.jpg", class: "d-block w-100", 
+               alt: "Hendrick's Gin, lavender syrup, lemon juice, egg white" %>
+              <div class="carousel-caption d-block">
+                <h5>Night Cap</h5>
+                <p>1st place winner, 2018 Hendrick's Competition</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "placeholder2.jpg", class: "d-block w-100", 
+               alt: "2 oz Nolet's Silver Gin, 6 oz pear peach syrup, 4 oz rose water" %>
+              <div class="carousel-caption d-block">
+                <h5>Nobleman's Rose</h5>
+                <p>2nd place winner, 2018 Nolet's Competition</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag "placeholder3.jpg", class: "d-block w-100", 
+               alt: "Plantation Dark Rum, strawberry puree, lemon juice, 
+               Jamaican bitters, brut" %>
+              <div class="carousel-caption d-block">
+                <h5>Cupid's Kiss</h5>
+                <p>Featured at Marriott Irvine Spectrum, 2019 Valentine's Day</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#drinksCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#drinksCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </div>
