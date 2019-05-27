@@ -4,13 +4,8 @@ class PagesController < ApplicationController
   
   def accolades
   end 
-
-  def contact
-  end 
   
   def tip_me
   end
-  
-  def test
-  end
+
 end

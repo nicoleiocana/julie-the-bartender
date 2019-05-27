@@ -13,12 +13,26 @@
 
 <a class="navbar-brand" href="#">
     <%= image_tag 'julie-the-bartender-logo.png', class: "mr-2", 
-     alt: "julie.the.bartender logo", style: "width: 40px;" %>
+     alt: "julie.the.bartender logo", width: "40" %>
     julie.the.bartender
   </a>
+  
+  <img src="/assets/julie-the-bartender-logo.png" class="d-inline-block align-top mr-2" 
+     alt="julie.the.bartenderlogo" width="30">
   
   <a class="navbar-brand" href="/">
     <img src="/assets/julie-the-bartender-logo.png" class="d-inline-block align-top mr-2" 
      alt="julie.the.bartenderlogo" width="30">
     julie.the.bartender
   </a>
+  
+  <%= image_tag 'julieplaceholder.jpg', size: "350x350", class: "card-img-top img-thumbnail", alt: "Julie M. Marroquin" %>
+  
+  (name: "Jane Doe", 
+                      email: "name@example.com",
+                      phone: "123-456-7890",
+                      body: "This is an example body of text.")
+                      
+                      <% flash.each do |message_type, message| %>
+  <%= content_tag(:div, message, class: "mt-2 mb-1 alert alert-#{message_type}") %>
+<% end %>
