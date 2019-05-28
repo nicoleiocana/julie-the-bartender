@@ -7,16 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= render 'application/favicon' %>
+    <%= render "application/favicon" %>
     <%= render "layouts/shiv" %>
   </head>
   
   <body>
-    <%= render 'layouts/header' %>
+    <%= render "layouts/header" %>
     <div class="container">
-      <% flash.each do |message_type, message| %>
-        <%= content_tag(:div, message, class: "mt-2 mb-1 alert alert-#{message_type}") %>
-      <% end %>
+      <%= render "shared/flash_messages" %>
       <%= yield %>
     </div>
   </body>

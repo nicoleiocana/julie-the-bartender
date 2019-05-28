@@ -1,8 +1,15 @@
-Hey Julie,
+Julie,
 
-juliethebartender.herokuapp.com gathered the following contact information - 
-
+juliethebartender.herokuapp.com gathered the following contact information -
 <%= @message.name %> can be reached via email at <%= @message.email %> or via
-cell phone: <%= @message.phone %>. Below is their message:
-
+cell phone:
+  <% if @message.phone.blank? %>
+    intentionally left blank.
+  <% else %>
+    <%= @message.phone %>.
+  <% end %>
+Below is their message:
 <%= @message.body %>
+
+
+

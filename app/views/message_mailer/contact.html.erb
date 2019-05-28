@@ -5,12 +5,12 @@
 </p> 
 
 <p><em><%= @message.name %></em> can be reached via email at 
-  <em><%= @message.email %></em> or via cell phone: 
+  <em><%= @message.email %></em> or via cell phone:
     <% if @message.phone.blank? %>
-      <i>intentionally left blank</i>
+      <i>intentionally left blank.</i>
     <% else %>
-      <em><%= @message.phone %></em>
-    <% end %>.
+      <em><%= @message.phone %>.</em>
+    <% end %>
   Below is their message:
 </p>
 

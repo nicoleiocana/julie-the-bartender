@@ -1,13 +1,13 @@
 <% provide(:title, "Contact") %>
 
 <h5 class="text-center mt-2 text-light">
-  Contact Me for your Individualized Cocktail Experience
+  Contact me for your individualized cocktail experience
 </h5>
 
 <div class="row justify-content-center text-light">
   <div class="col-md-6">
     <%= form_for @message do |f| %>
-      <%= render 'error_messages' %>
+      <%= render "shared/error_messages" %>
       <div class="form-group">
         <%= f.label :name %>
         <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
@@ -21,7 +21,7 @@
       <div class="form-group">
         <%= f.label :phone %>
         <%= f.telephone_field :phone, class: "form-control", 
-         placeholder: "Cell phone (optional)" %>
+         placeholder: "123-456-7890 (optional)" %>
       </div>
       <div class="form-group">
         <%= f.label :body %>

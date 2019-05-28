@@ -1,0 +1,3 @@
+<% flash.each do |message_type, message| %>
+  <%= content_tag(:div, message, class: "mt-2 mb-1 alert alert-#{message_type}") %>
+<% end %>

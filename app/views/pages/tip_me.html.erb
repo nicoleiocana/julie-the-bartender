@@ -1,13 +1,11 @@
 <% provide(:title, "Tip Me") %>
-
 <h3 class="text-center mt-2 text-light">Thank You</h3>
-
 <div class="row justify-content-center text-light">
   <div class="col-md-5">
     <p>
       Cheers to your personalized cocktail experience! Your gratitude is appreciated.
     </p>
-    <div class="mx-auto" style="width:147px">
+    <div class="mx-auto" id="donationButton">
       <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank" 
        rel="noopener noreferrer">
       <input type="hidden" name="cmd" value="_donations" />

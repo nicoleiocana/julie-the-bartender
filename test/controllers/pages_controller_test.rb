@@ -18,12 +18,6 @@ class PagesControllerTest < ActionDispatch::IntegrationTest
     assert_select "title", "Accolades | #{@base_title}"
   end
   
-  test "should get contact" do
-    get new_message_path
-    assert_response :success
-    assert_select "title", "Contact | #{@base_title}"
-  end
-  
   test "should get tip me" do
     get tip_me_path
     assert_response :success
