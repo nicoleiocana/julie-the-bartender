@@ -9,6 +9,6 @@ class MessageMailer < ApplicationMailer
     @message = message
 
     mail to: "juliemarroquin.bartender@gmail.com", 
-    subject: "Contact Information Gathered From julie-the-bartender.herokuapp.com"
+    subject: "Contact Information Gathered From juliethebartender.herokuapp.com"
   end
 end

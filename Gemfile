@@ -41,6 +41,9 @@ gem 'jquery-rails', '~> 4.3', '>= 4.3.3'
 # The most popular HTML, CSS, and JavaScript framework on the web.
 gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 
+# Generate and install a favicon for all platforms with RealFaviconGenerator.
+gem 'rails_real_favicon', '~> 0.0.12'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'

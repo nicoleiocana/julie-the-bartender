@@ -1,6 +1,8 @@
 <% provide(:title, "Contact") %>
 
-<h3 class="text-center mt-2 text-light">Contact Me for Cocktail Catering</h3>
+<h5 class="text-center mt-2 text-light">
+  Contact Me for your Individualized Cocktail Experience
+</h5>
 
 <div class="row justify-content-center text-light">
   <div class="col-md-6">
@@ -11,10 +13,10 @@
         <%= f.text_field :name, class: "form-control", placeholder: "Your name" %>
       </div>
       <div class="form-group">
-        <span data-toggle="tooltip" 
-         title="Julie believes in no spam + all data kept private">
-         <%= f.label :email %></span>
-        <%= f.email_field :email, class: "form-control", placeholder: "name@example.com" %>
+        <%= f.label :email %>
+        <span data-toggle="tooltip" title="Julie believes in no spam + all data kept private">
+         <%= f.email_field :email, class: "form-control", placeholder: "name@example.com" %>
+        </span>
       </div>
       <div class="form-group">
         <%= f.label :phone %>
