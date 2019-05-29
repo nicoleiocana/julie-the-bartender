@@ -15,5 +15,4 @@ class MessageMailerTest < ActionMailer::TestCase
     assert_match msg.email, mail.body.encoded
     assert_match msg.body, mail.body.encoded
   end
-
 end

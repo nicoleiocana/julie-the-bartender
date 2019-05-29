@@ -45,8 +45,9 @@ class MessageTest < ActiveSupport::TestCase
     end
   end
   
-  test "phone validation should accept valid phone numbers" do
-    valid_phone_numbers = ["123-456-7890",
+  test "phone validation should accept valid/optional phone numbers" do
+    valid_phone_numbers = ["",
+                           "123-456-7890",
                            "18005551234",
                            "1    800    555-1234",
                            "(123) 456-7890",

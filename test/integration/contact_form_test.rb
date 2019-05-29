@@ -17,6 +17,8 @@ class ContactFormTest < ActionDispatch::IntegrationTest
     post messages_path, params: { message: { name: "John Doe",
                                              email: "name@example.com",
                                              body: "Sample text" } }
-    assert_response 200
+    follow_redirect!
+    assert_template "pages/home"
+    assert_select "div.alert-success"
   end
 end
