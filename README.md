@@ -35,11 +35,14 @@ Once the test suite passes, you'll be ready to run the app in a local server:
 $ rails s
 ```
 
-Modify the owner, website name, donation link, and pictures to fit your needs.
+Modify the owner, website name, favicon logo, donation link, and pictures to fit your needs.
 Enjoy the template!  
 Locations:  
 - application_helper.rb
 - _header.html.erb
+- /assets/images
+- favicon information:
+  - favicon.json
 - home.html.erb
 - accolades.html.erb
 - tip_me.html.erb
