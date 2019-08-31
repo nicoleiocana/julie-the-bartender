@@ -2,6 +2,9 @@ class PagesController < ApplicationController
   def home
   end
   
+  def featured_menu
+  end 
+  
   def accolades
   end 
   
