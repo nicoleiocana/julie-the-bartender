@@ -10,5 +10,8 @@ class PagesController < ApplicationController
   
   def tip_me
   end
+  
+  def availability
+  end
 
 end
