@@ -4,7 +4,7 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 ruby '3.1.0'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 5.2.3'
+gem 'rails', '~> 7.0.0'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.3', '>= 4.3.1'
@@ -43,6 +43,8 @@ gem 'bootstrap', '~> 4.3', '>= 4.3.1'
 
 # Generate and install a favicon for all platforms with RealFaviconGenerator.
 gem 'rails_real_favicon', '~> 0.0.12'
+
+gem 'mimemagic', github: 'mimemagicrb/mimemagic', ref: '01f92d86d15d85cfd0f20dabd025dcbd36a8a60f'
 
 group :development, :test do
   # Use sqlite3 as the database for Active Record
